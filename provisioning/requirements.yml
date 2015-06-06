@@ -1,0 +1,9 @@
+- src: f500.project_deploy_module
+- name: ntp
+  src: resmo.ntp
+- name: logrotate
+  src: nickhammond.logrotate
+- name: php5-xdebug
+  src: MaximeThoonsen.php5-xdebug
+- name: swapfile
+  src: kamaln7.swapfile
