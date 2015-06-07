@@ -49,3 +49,8 @@ logrotate_scripts:
               run-parts /etc/logrotate.d/httpd-prerotate; \
             fi \
       postrotate: invoke-rc.d nginx rotate >/dev/null 2>&1
+
+github_ssh_keys:
+  - username: skoks
+    authorized:
+      - "{{ web_user }}"
