@@ -29,7 +29,11 @@ Installs and configures `Fail2ban`. Fail2Ban monitors log files of specific serv
 
 _Ferm:_
 
+Working with `iptables` directly can be really painful and the [ufw module](http://docs.ansible.com/ufw_module.html) is decent for basic needs but sometimes you need a bit more control. I also like the approach of writing templates rather than executing `allow`/`deny` commands with `ufw`.
 
+_Network Time Protocol:_
+
+This role enables users to install and configure ntp on their hosts.
 
 _Users:_
 
