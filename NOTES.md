@@ -4,7 +4,7 @@
 
 ### Vendor roles 
 
-_NTP:_
+_NTP_:
 
 This role installs and NTP.
 
@@ -15,27 +15,31 @@ More information can be found [ntp.org](http://www.pool.ntp.org/en/)
 
 ### Bedrock roles 
 
-_Common:_
+_Common_:
 
 * Apt update, install new packages
 * Handlers for nginx, php-fpm, memcached
 * [ADD] Defaults
 
-_Swapfile:_
+_Swapfile_:
 
-_Fail2ban:_
+_Fail2ban_:
 
 Installs and configures `Fail2ban`. Fail2Ban monitors log files of specific services and bans ip addresses with `iptables` firewall. 
 
-_Ferm:_
+_Ferm_:
 
 Working with `iptables` directly can be really painful and the [ufw module](http://docs.ansible.com/ufw_module.html) is decent for basic needs but sometimes you need a bit more control. I also like the approach of writing templates rather than executing `allow`/`deny` commands with `ufw`.
 
-_Network Time Protocol:_
+_Network Time Protocol_:
 
 This role enables users to install and configure ntp on their hosts.
 
-_Users:_
+_Mariadb_:
+
+This role installs `Mariadb` and remove default DB.
+
+_Users_:
 
 * Ensures that `web_user` exists
 * Adds `web_user` to `www-data`
@@ -43,21 +47,20 @@ _Users:_
 
 After running this role every sudoer has access to all commands within a variable set of users, and global setting determines whether NOPASSWD is set or not.
 
-_Mariadb:_
 
-_Ssmpt:_
+_Ssmpt_:
 
-_Php:_
+_Php_:
 
-_Nginx:_
+_Nginx_:
 
-_Logrotate:_
+_Logrotate_:
 
-_Memcached:_
+_Memcached_:
 
-_Composer:_
+_Composer_:
 
-_WP-CLI:_
+_WP-CLI_:
 
 ## To Do
 
