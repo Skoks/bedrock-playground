@@ -48,9 +48,11 @@ _Users_:
 After running this role every sudoer has access to all commands within a variable set of users, and global setting determines whether NOPASSWD is set or not.
 
 
-_Ssmpt_:
+_SSMTP_:
 
-_Php_:
+Install and configure SSMTP - email delivery program.
+
+_PHP_:
 
 _Nginx_:
 
