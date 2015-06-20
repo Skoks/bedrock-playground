@@ -54,6 +54,8 @@ Install and configure SSMTP - email delivery program.
 
 _PHP_:
 
+Install php 5.6 and other common php packages. Set up php.ini and php-fpm.conf configuration files.
+
 _Nginx_:
 
 _Logrotate_:
