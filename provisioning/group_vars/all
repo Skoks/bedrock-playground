@@ -54,3 +54,17 @@ github_ssh_keys:
   - username: skoks
     authorized:
       - "{{ web_user }}"
+
+logrotate_scripts:
+  - name: nginx
+    path: /var/log/nginx/*.log
+    options:
+      - weekly
+      - size 25M
+      - rotate 7
+      - missingok
+      - compress
+      - delaycompress
+      - copytruncate
+    scripts:
+      postrotate: "[ -s /run/nginx.pid ] && kill USR1 `cat /run/nginx.pid`"
