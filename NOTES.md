@@ -58,7 +58,11 @@ Install php 5.6 and other common php packages. Set up php.ini and php-fpm.conf c
 
 _Nginx_:
 
+Install and setup nginx configuration, wordpress nginx configuration, SSL if enabled
+
 _Logrotate_:
+
+
 
 _Memcached_:
 
@@ -67,6 +71,9 @@ _Composer_:
 _WP-CLI_:
 
 ## To Do
+
+- How to setup SSL? Name of `.cert` file ? 
+- 
 
 ### Development roles
 
