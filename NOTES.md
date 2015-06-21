@@ -15,31 +15,31 @@ More information can be found [ntp.org](http://www.pool.ntp.org/en/)
 
 ### Bedrock roles 
 
-_Common_:
+__Common__:
 
 * Apt update, install new packages
 * Handlers for nginx, php-fpm, memcached
 * [ADD] Defaults
 
-_Swapfile_:
+__Swapfile__:
 
-_Fail2ban_:
+__Fail2ban__:
 
 Installs and configures `Fail2ban`. Fail2Ban monitors log files of specific services and bans ip addresses with `iptables` firewall. 
 
-_Ferm_:
+__Ferm__:
 
 Working with `iptables` directly can be really painful and the [ufw module](http://docs.ansible.com/ufw_module.html) is decent for basic needs but sometimes you need a bit more control. I also like the approach of writing templates rather than executing `allow`/`deny` commands with `ufw`.
 
-_Network Time Protocol_:
+__Network Time Protocol__:
 
 This role enables users to install and configure ntp on their hosts.
 
-_Mariadb_:
+__Mariadb__:
 
 This role installs `Mariadb` and remove default DB.
 
-_Users_:
+__Users__:
 
 * Ensures that `web_user` exists
 * Adds `web_user` to `www-data`
@@ -48,31 +48,43 @@ _Users_:
 After running this role every sudoer has access to all commands within a variable set of users, and global setting determines whether NOPASSWD is set or not.
 
 
-_SSMTP_:
+__SSMTP__:
 
 Install and configure SSMTP - email delivery program.
 
-_PHP_:
+__PHP__:
 
 Install php 5.6 and other common php packages. Set up php.ini and php-fpm.conf configuration files.
 
-_Nginx_:
+__Nginx__:
 
 Install and setup nginx configuration, wordpress nginx configuration, SSL if enabled
 
-_Logrotate_:
+__Logrotate__:
+
+Installs logrotate and provides an easy way to setup additional logrotate scripts by specifying a list of directives.
+
+__Memcached__:
+
+Install and setup Memcached with PHP support.
+
+__Composer__:
+
+Install and update composer.
+
+__WP-CLI__:
+
+__wordpress-setup__:
+
+__wordpress-install__:
 
 
-
-_Memcached_:
-
-_Composer_:
-
-_WP-CLI_:
 
 ## To Do
 
 - How to setup SSL? Name of `.cert` file ? 
+- Logrotate details, add log rotates configurations for each service? 
+- 
 - 
 
 ### Development roles
