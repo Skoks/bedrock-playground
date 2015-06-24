@@ -74,9 +74,14 @@ Install and update composer.
 
 __WP-CLI__:
 
+Install command line interface for WordPress
+
 __wordpress-setup__:
 
+
+
 __wordpress-install__:
+
 
 
 
@@ -84,7 +89,7 @@ __wordpress-install__:
 
 - How to setup SSL? Name of `.cert` file ? 
 - Logrotate details, add log rotates configurations for each service? 
-- 
+- Add Memcached notes
 - 
 
 ### Development roles
