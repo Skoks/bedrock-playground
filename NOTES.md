@@ -78,7 +78,9 @@ Install command line interface for WordPress
 
 __wordpress-setup__:
 
-
+* Database configuration
+* Nginx configuration
+* WordPress configuration
 
 __wordpress-install__:
 
@@ -87,10 +89,10 @@ __wordpress-install__:
 
 ## To Do
 
-- How to setup SSL? Name of `.cert` file ? 
+- How to setup SSL? Name of `.cert` file ? (WordPress install role, nginx.yml include)
 - Logrotate details, add log rotates configurations for each service? 
 - Add Memcached notes
-- 
+- Write alternative mysql shell commands
 
 ### Development roles
 
